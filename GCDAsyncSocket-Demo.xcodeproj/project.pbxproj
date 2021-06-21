@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0622DA2B8D5CBA110AC9920B /* Pods_GCDAsyncSocket_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94614DAC2AFE4D6254FE0634 /* Pods_GCDAsyncSocket_Demo.framework */; };
 		A32D5392268098CC005A285E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A32D5391268098CC005A285E /* AppDelegate.m */; };
 		A32D5395268098CC005A285E /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A32D5394268098CC005A285E /* SceneDelegate.m */; };
 		A32D5398268098CC005A285E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A32D5397268098CC005A285E /* ViewController.m */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		94614DAC2AFE4D6254FE0634 /* Pods_GCDAsyncSocket_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GCDAsyncSocket_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A32D538D268098CC005A285E /* GCDAsyncSocket-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GCDAsyncSocket-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A32D5390268098CC005A285E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A32D5391268098CC005A285E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +31,8 @@
 		A32D539F268098CD005A285E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A32D53A1268098CD005A285E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A32D53A2268098CD005A285E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EA232BBF8F731BC04D7C0D36 /* Pods-GCDAsyncSocket-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GCDAsyncSocket-Demo.debug.xcconfig"; path = "Target Support Files/Pods-GCDAsyncSocket-Demo/Pods-GCDAsyncSocket-Demo.debug.xcconfig"; sourceTree = "<group>"; };
+		EB816F0E5D8764EBAD9C1F30 /* Pods-GCDAsyncSocket-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GCDAsyncSocket-Demo.release.xcconfig"; path = "Target Support Files/Pods-GCDAsyncSocket-Demo/Pods-GCDAsyncSocket-Demo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +40,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0622DA2B8D5CBA110AC9920B /* Pods_GCDAsyncSocket_Demo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		88636B29728C442EC6DA6FD4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EA232BBF8F731BC04D7C0D36 /* Pods-GCDAsyncSocket-Demo.debug.xcconfig */,
+				EB816F0E5D8764EBAD9C1F30 /* Pods-GCDAsyncSocket-Demo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9834DF20775D67B6EF6B176B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				94614DAC2AFE4D6254FE0634 /* Pods_GCDAsyncSocket_Demo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A32D5384268098CB005A285E = {
 			isa = PBXGroup;
 			children = (
 				A32D538F268098CC005A285E /* GCDAsyncSocket-Demo */,
 				A32D538E268098CC005A285E /* Products */,
+				88636B29728C442EC6DA6FD4 /* Pods */,
+				9834DF20775D67B6EF6B176B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,9 +108,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A32D53A6268098CD005A285E /* Build configuration list for PBXNativeTarget "GCDAsyncSocket-Demo" */;
 			buildPhases = (
+				DDBBACBA6364477226E2B5A3 /* [CP] Check Pods Manifest.lock */,
 				A32D5389268098CC005A285E /* Sources */,
 				A32D538A268098CC005A285E /* Frameworks */,
 				A32D538B268098CC005A285E /* Resources */,
+				ED03B5C055395118716D8F4D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -139,6 +166,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DDBBACBA6364477226E2B5A3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GCDAsyncSocket-Demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED03B5C055395118716D8F4D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GCDAsyncSocket-Demo/Pods-GCDAsyncSocket-Demo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GCDAsyncSocket-Demo/Pods-GCDAsyncSocket-Demo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GCDAsyncSocket-Demo/Pods-GCDAsyncSocket-Demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A32D5389268098CC005A285E /* Sources */ = {
@@ -288,6 +357,7 @@
 		};
 		A32D53A7268098CD005A285E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA232BBF8F731BC04D7C0D36 /* Pods-GCDAsyncSocket-Demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -305,6 +375,7 @@
 		};
 		A32D53A8268098CD005A285E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB816F0E5D8764EBAD9C1F30 /* Pods-GCDAsyncSocket-Demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

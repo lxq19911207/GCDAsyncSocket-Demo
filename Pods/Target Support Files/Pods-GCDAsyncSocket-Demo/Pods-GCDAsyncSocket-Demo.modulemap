@@ -1,0 +1,6 @@
+framework module Pods_GCDAsyncSocket_Demo {
+  umbrella header "Pods-GCDAsyncSocket-Demo-umbrella.h"
+
+  export *
+  module * { export * }
+}
