@@ -1,0 +1,7 @@
+# GCDAsyncSocket-Demo
+GCDAsyncSocket, Demo
+使用GCDAsyncSocket写的Demo
+使用非常简单，只需要一个service和一个client。
+service使用服务器配置，只需要设置port。
+client输入service的ip和port
+即可开始测试GCDAsyncSocket
